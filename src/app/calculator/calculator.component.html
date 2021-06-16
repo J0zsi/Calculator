@@ -1,0 +1,28 @@
+<div class="calc">
+    <div class="calc__top"></div>
+    <div class="calc__screen">
+		<div class="calc__screen-line calc__screen-line--result">
+			<div class="calc__screen-text">{{ result }}</div>
+		</div>
+		<div class="calc__screen-line calc__screen-line--expression">
+			<div class="calc__screen-text">{{ expression }}</div>
+		</div>
+    </div>
+	<div class="calc__btns">
+		<button class="calc__btn" type="button" (click)="onPressNumber('7')">7</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('8')">8</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('9')">9</button>
+		<button class="calc__btn calc__btn--primary" type="button" (click)="onPressClear()" title="Clear" aria-label="Clear">C</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('4')">4</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('5')">5</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('6')">6</button>
+		<button class="calc__btn calc__btn--secondary" type="button" (click)="onPressOperator('-')" title="Minus" aria-label="Minus">–</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('1')">1</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('2')">2</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('3')">3</button>
+		<button class="calc__btn calc__btn--secondary calc__btn--tall" type="button" (click)="onPressOperator('+')" title="Plus" aria-label="Plus">+</button>
+		<button class="calc__btn" type="button" (click)="onPressNumber('0')">0</button>
+		<button class="calc__btn calc__btn--secondary" type="button" (click)="onPressDelete()" title="Delete" aria-label="Delete">←</button>
+		<button class="calc__btn calc__btn--secondary" type="button" (click)="onPressEquals()" title="Equals" aria-label="Equals">=</button>
+	</div>
+</div>
